@@ -18,10 +18,7 @@ function Header() {
                 {cars && cars.map((car, index) => (
                         <a key={index} href="#">{car}</a>
                 ))}
-                <p><a href = "#"> Model S</a></p>
-                <p><a href = "#"> Model 3</a></p>
-                <p><a href = "#"> Model X</a></p>
-                <p><a href = "#"> Model Y</a></p>
+                
             </Menu>
             <RightMenu>
                 <a href="#">Shop</a>
@@ -40,9 +37,6 @@ function Header() {
                 <li><a href ="#">Trade-in </a></li>
                 <li><a href ="#">Cybertruck </a></li>
                 <li><a href ="#">Roadaster</a></li>
-                <li><a href ="#">Used Inventory </a></li>
-                <li><a href ="#">Used Inventory </a></li>
-                <li><a href ="#">Used Inventory </a></li>
             </BurgerNav>
         </Container>
     )
@@ -119,7 +113,7 @@ const BurgerNav = styled.div`
     flex-direction: column;
     text-align: start;
     transform: ${props => props.show ? 'translateX(0)': 'translateX(100%)'};
-    transition: transform 0.2s; ease-in;
+    transition: transform 0.2s; 
     li {
         padding: 15px 0;
         border-bottom: 1px solid rgba (0, 0, 0, .2);
